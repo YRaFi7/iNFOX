@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form method="post" action="Stud_Reg">
+        {% csrf_token %}
+        <label> Name: </label>
+        <input type="text" name="s_name"><br><br>
+        <label> Age: </label>
+        <input type="text" name="s_age"><br><br>
+        <label> Address: </label>
+        <input type="text" name="s_address"><br><br>
+        <label> Joining_date: </label>
+        <input type="date" name="s_joining_date"><br><br>
+        <label> Email_id: </label>
+        <input type="email" name="s_email_id"><br><br>
+        <label >Qualifications:</label>
+        <select name="s_qualifications">
+            <option value="+2">+2</option>
+            <option value="Degree">Degree</option>
+            <option value="PG">PG</option>
+        </select><br><br>
+        <label> Gender: </label>
+        <input type="radio" name="s_gender" value="male"> Male
+        <input type="radio" name="s_gender" value="female"> Female
+        <input type="radio" name="s_gender" value="female"> Other <br><br>
+        <label> Phn-No: </label>
+        <input type="number" name="s_phone"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Full Details</title>
+</head>
+<body>
+   <h1> Student Details </h1>
+   <table border="2px">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>ADDRESS</th>
+            <th>JOINING DATE</th>
+            <th>EMAIL</th>
+            <th>QUALIFICATION</th>
+            <th>GENDER</th>
+            <th>PHONE NO</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>  {{ students.s_name }}   </td>
+            <td>  {{ students.s_age }}   </td>
+            <td>  {{ students.s_address }}   </td>
+            <td>  {{ students.s_joining_date }}   </td>
+            <td>  {{ students.s_email_id }}   </td>
+            <td>  {{ students.s_qualifications }}   </td>
+            <td>  {{ students.s_gender }}   </td>
+            <td>  {{ students.s_phone }}   </td>
+        </td>
+    </tr>
+
+</tbody>
+</table>
+<input type=button value="Previous Page" onClick="javascript:history.go(-1);">
+</body>
+</html>
